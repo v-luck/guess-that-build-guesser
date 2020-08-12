@@ -1,7 +1,7 @@
 cheat_word= open('words.txt', 'r')
-cheat_list = ((cheat_word.read()).split(","))
+cheat_list = ((cheat_word.read()).splitlines())
 
-user_word = input("Insert word you want")
+user_word = input("Insert word you want: ")
 user_word_list = []
 for x in user_word:
     user_word_list.append(x)
@@ -19,9 +19,4 @@ for word in cheat_list:
 
         if cheat_word_index == len(user_word):
             print(word)
-
-
-
-
-
 
